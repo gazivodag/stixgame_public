@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <title>game</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/skripts/eventbus.js"></script>
+        <script src="/skripts/constants.js"></script>
+        <script src="/skripts/loginscreen.js"></script>
+        <script src="/skripts/tileengine.js"></script>
+        <script src="/skripts/game.js"></script>
+    </head>
+
+    <body style="background-color: black">
+
+        <header>
+            <h1 hidden>im the head</h1>
+        </header>
+
+        <h1 hidden>hi im in the body</h1>
+
+        <image src="/resources/stickman.png" hidden id="stickmanImg"></image>
+        <image src="/resources/grass.png" hidden id="grassImg"></image>
+        <image src="/resources/outofarea.png" hidden id="ooaImg"></image>
+
+        
+        <input type="button" value="increase res" id="decRes">
+        <input type="button" value="decrease res" id="incRes">
+
+        <input type="text" name="yooo" placeholder="type username here" id="usernameInput">
+        <input type="button" value="login" id="loginBtn">
+        
+        <div style="text-align: center;">
+            <canvas id="gameCanvas" width="600" height="400" style="border:1px solid #000000;" tabindex="1" oncontextmenu="event.preventDefault();" autofocus></canvas>
+        </div>
+        
+
+        <footer>
+            <h1 hidden>hi im a footer</h1>
+        </footer>
+    </body>
+</html>
